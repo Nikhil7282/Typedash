@@ -1,18 +1,47 @@
+# Typing Speed Test
+
+A Java-based application to measure typing speed and accuracy. The Typing Speed Test provides two modes: typing the full given text and typing within a one-minute timer. This project is designed to help users improve their typing skills by providing immediate feedback on typing speed and accuracy.
+
+## Features
+
+- **Two Typing Modes**:
+  - **Full Text Mode**: Type the entire provided text to measure overall speed and accuracy.
+  - **Timed Mode**: Type as much of the provided text as possible within one minute.
+- **Real-time Feedback**: Calculates and displays typing speed (characters per second) and accuracy (%) after completion.
+- **Customizable Text**: Easily change the text to be typed in both modes.
+
 ## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+### Prerequisites
 
-## Folder Structure
+- Java Development Kit (JDK) installed on your machine.
+- A Java IDE or text editor such as Visual Studio Code.
 
-The workspace contains two folders by default, where:
+### Installation
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+1. **Clone the repository**:
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+    ```sh
+    git clone https://github.com/<USERNAME>/typing-speed-test.git
+    cd typing-speed-test
+    ```
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+2. **Open the project** in your preferred IDE.
 
-## Dependency Management
+3. **Run the application**:
+   - In the IDE, run the `TypingTest` class.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Usage
+
+- When prompted, choose the typing mode (1 for Full Text Mode, 2 for Timed Mode).
+- Start typing the provided text.
+- In Full Text Mode, type the entire text and press Enter when done.
+- In Timed Mode, type as much of the text as you can within one minute.
+- View your typing speed and accuracy after completing the test.
+
+## Example
+
+```java
+// Create an instance of TypingTest with sample text and mode
+TypingTest test = new TypingTest("The quick brown fox jumps over the lazy dog.", 2);
+test.typeInMinute();
