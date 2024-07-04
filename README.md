@@ -22,8 +22,8 @@ A Java-based application to measure typing speed and accuracy. The Typing Speed 
 1. **Clone the repository**:
 
     ```sh
-    git clone https://github.com/<USERNAME>/typing-speed-test.git
-    cd typing-speed-test
+    git clone https://github.com/Nikhil7282/Typedash.git
+    cd Typedash
     ```
 
 2. **Open the project** in your preferred IDE.
@@ -44,4 +44,4 @@ A Java-based application to measure typing speed and accuracy. The Typing Speed 
 ```java
 // Create an instance of TypingTest with sample text and mode
 TypingTest test = new TypingTest("The quick brown fox jumps over the lazy dog.", 2);
-test.typeInMinute();
+```
